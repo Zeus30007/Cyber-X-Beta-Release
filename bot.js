@@ -222,7 +222,7 @@ let docs = pickRandom(documents)
             else if (reason === DisconnectReason.loggedOut) { console.log(`🦄Device Logged Out, Please Scan Again And Run.`); BixbyMD.logout(); }
             else if (reason === DisconnectReason.restartRequired) { console.log("🦄Restart Required, Restarting..."); startBixbyMD(); }
             else if (reason === DisconnectReason.timedOut) { console.log("🦄Connection TimedOut, Reconnecting..."); startBixbyMD(); }
-            else BixbyMD.end(`🦄Unknown DisconnectReason: ${reason}|${connection}`)
+            else BixbyMD.end(`Unknown DisconnectReason: ${reason}|${connection}`)
         }
         console.log('Connected...', update)
     })
